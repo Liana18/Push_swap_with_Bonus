@@ -6,7 +6,7 @@
 /*   By: lter-zak <lter-zak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/01 21:46:58 by lter-zak          #+#    #+#             */
-/*   Updated: 2022/11/05 16:09:26 by lter-zak         ###   ########.fr       */
+/*   Updated: 2022/11/06 15:54:32 by lter-zak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,8 @@ char	*ft_join_str(char **str)
 
 	i = 1;
 	if (!ft_strlen1(str[i]))
+		print_error();
+	if (is_space(&str[i]))
 		print_error();
 	arr = ft_firs_join(str[i]);
 	i++;
